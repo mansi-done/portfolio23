@@ -1,0 +1,16 @@
+.container{
+   display: flex;
+   height: 100%;
+   width: 100%;
+}
+
+.win{
+   position: fixed;
+   top:10vh;
+   left:10vw;
+   height: 40vh;
+   width: 40vw;
+
+   border: 1px solid black;
+   
+}

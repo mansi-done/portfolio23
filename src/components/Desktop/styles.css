@@ -1,0 +1,31 @@
+.desktop-wrapper {
+  display: flex;
+}
+
+.icon-wrapper {
+  height: 100%;
+}
+.popable-intro {
+}
+
+.mycomputer {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  /* gap:-1rem; */
+}
+
+.folder-logo {
+  width: 5vw;
+}
+.mycomputer:active .folder-logo {
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+}
+
+.folder-text {
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 200;
+  font-family: Tahoma;
+}

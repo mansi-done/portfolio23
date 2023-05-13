@@ -1,0 +1,45 @@
+.taskbar-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #3674c2;
+  /* box-shadow: inset 0 0 10px #ffffffb9; */
+  box-shadow: 0 2px 4px #fff, /*bottom external highlight*/ 0 -2px 2px #666,
+    /*top external shadow*/ inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+    /*bottom internal shadow*/ inset 0 2px 2px rgba(255, 255, 255, 0.393); /*top internal highlight*/
+}
+
+.start-btn {
+  background-color: #339031;
+  width: 7vw;
+  height: 100%;
+  box-shadow: 0 2px 4px #fff, /*bottom external highlight*/ 0 -2px 2px #666,
+    /*top external shadow*/ inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+    /*bottom internal shadow*/ inset 0 2px 2px rgba(255, 255, 255, 0.8); /*top internal highlight*/
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2vw;
+  font-family: Tahoma;
+}
+
+.start-btn:hover {
+  background-color: #548a53;
+}
+.start-btn:active {
+  box-shadow: none;
+}
+
+.windows-logo {
+  width: 28%;
+}
+.text {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 1px rgba(41, 39, 30, 0.8);
+}

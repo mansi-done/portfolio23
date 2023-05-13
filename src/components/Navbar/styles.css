@@ -1,0 +1,80 @@
+.navbar-wrapper {
+  position: fixed;
+  width: 15vw;
+
+  min-height: 80vh;
+  height: 100%;
+  font-family: "Jost";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: ease-in-out 1s;
+}
+
+@keyframes example {
+  from {
+    border-bottom-right-radius: 10%;
+  }
+  to {
+    border-bottom-right-radius: 100%;
+  }
+}
+
+.nav {
+  background-color: #b8aea37e;
+  border-bottom-right-radius: 100%;
+  padding-inline: 2.2vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 1s;
+}
+
+.nav:hover {
+  box-shadow: 0 0 10px 10px #ffffff88, 0 0 17px rgba(143, 143, 97, 0.477) f8f61,
+    0 0 10px 10px #a6a87c6b;
+}
+
+.nav-list {
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(181, 181, 181);
+  transition: 0.2s ease-in;
+  font-weight: 1000;
+}
+
+.link:hover {
+  color: rgb(191, 165, 255);
+  /* color: #606060; */
+  font-size: 1.8rem;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.contact-link:hover {
+  color: rgb(191, 165, 255);
+  font-size: 2rem;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
