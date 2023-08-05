@@ -4,6 +4,11 @@ import { Button, Steps, Divider } from "antd";
 
 import mypicture from "../../assets/mansi.jpg";
 
+
+import { ParallaxBanner } from 'react-scroll-parallax';
+import Rellax from "rellax";
+
+
 interface SectionProps {
   id?: string;
 }
@@ -32,34 +37,57 @@ const Home = () => {
     return () => observer.unobserve(div);
   }, []);
 
+  useEffect(() => {
+    new Rellax(".leftimganimate", { // <---- Via class name
+      speed: 10,
+      center: false,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+    new Rellax(".rightimganimate", {
+      speed: 3,
+      center: false,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+    new Rellax(".lines", {
+      speed: 5,
+      center: false,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+
+    new Rellax(".contact", {
+      speed: -1,
+      center: false,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+  }, []);
+
+
   return (
     <div className="home-wrapper">
       <section id="home">
         <div className="intro-section">
           <div className="left">
             <div className="side">
-              <div className="greetings">Hey there, I am</div>
               <div className="name">Mansi Saini </div>
             </div>
-
-           
-           
-
-            <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Hire Me</Button> </a></div>
-
+            <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Get in touch</Button> </a></div>
           </div>
 
-          <div className="right">
+          {/* <div className="right">
             <div className="center">
               <div className="aboutme">
-                <span style={{ fontWeight: "900" }}>
-                  {" "}
-                  Full Stack Developer{" "}
-                </span>
-                and engineering student based out of Hyderabad, India.
+                I'm a Software Engineer based out of Hyderabad, India.
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* <div className="main-links">
@@ -67,7 +95,7 @@ const Home = () => {
             <div className="round-animated-btn">Projects</div>
           </div>
 
-          <div className="contact">
+          <div className="contact">nnn
             <div className="round-animated-btn">About Me</div>
           </div>
         </div> */}
@@ -75,78 +103,109 @@ const Home = () => {
 
       <section id="about-me">
         <br />
-        <div className="aboutme-title">About me</div>
+        {/* <div className="aboutme-title">About me</div> */}
         <div className="about-me-section">
           <div className="aboutme-bottom">
             <div className="aboutme-details">
-              Hello there, I am a developer based out of Hyderabad. Currently, I
-              am in my final year of engineering at JNTU Hyderabad.
+              I'm a Software Engineer based out of Hyderabad, India.
               <div className="details">
-                <div className="experience-title">Experience</div>
-                <Steps
-                  progressDot
-                  current={5}
-                  direction="vertical"
-                  items={[
-                    {
-                      title: <div>True Beacon</div>,
-                      description: (
-                        <div>
-                          Full Stack Intern - <em>Banglore</em>
-                        </div>
-                      ),
-                    },
-                    {
-                      title: <div>Logarithm Technologies</div>,
-                      description: (
-                        <div>
-                          Web Development Intern - <em>Banglore (Remote)</em>
-                        </div>
-                      ),
-                    },
-                    {
-                      title: <div>Helping Hand International</div>,
-                      description: (
-                        <div>
-                          Web Development Intern - <em> Remote</em>
-                        </div>
-                      ),
-                    },
-                  ]}
-                />
-                <br />
-                <br />
+                <div className="exp">
+                  <div className="experience-title">Experience</div>
+                  <Steps
+                    progressDot
+                    current={5}
+                    direction="vertical"
+                    items={[
+                      {
+                        title: <div>Adqura</div>,
+                        description: (
+                          <div>
+                            Software Engineer - <em>Hyderabad,India</em>
+                          </div>
+                        ),
+                      },
+                      {
+                        title: <div>True Beacon</div>,
+                        description: (
+                          <div>
+                            Full Stack Engineering Intern - <em>Banglore,India</em>
+                          </div>
+                        ),
+                      },
+                      {
+                        title: <div>Logarithm Technologies</div>,
+                        description: (
+                          <div>
+                            Web Development Intern - <em>Banglore,India (Remote)</em>
+                          </div>
+                        ),
+                      },
+                      {
+                        title: <div>Helping Hand International</div>,
+                        description: (
+                          <div>
+                            Web Development Intern - <em> Remote</em>
+                          </div>
+                        ),
+                      },
+                    ]}
+                  />
 
-                <div className="experience-title">Education</div>
-                <Steps
-                  progressDot
-                  current={5}
-                  direction="vertical"
-                  items={[
-                    {
-                      title: (
-                        <div>
-                          Jawaharlal Nehru Technological University, Hyderabad
-                        </div>
-                      ),
-                      description: (
-                        <div>
-                          2019-2023 <br />
-                          Bachelor's of Technology -{" "}
-                          <em>Electronics and Communication Engineering</em>
-                        </div>
-                      ),
-                    },
-                  ]}
-                />
+
+
+
+
+                </div>
+
+                <div className="edu">
+                  <div className="experience-title">Education</div>
+                  <Steps
+                    progressDot
+                    current={5}
+                    direction="vertical"
+                    items={[
+                      {
+                        title: (
+                          <div>
+                            Jawaharlal Nehru Technological University, Hyderabad
+                          </div>
+                        ),
+                        description: (
+                          <div>
+                            2019-2023 <br />
+                            Bachelor's of Technology -{" "}
+                            <em>Electronics and Communication Engineering</em>
+                          </div>
+                        ),
+                      },
+                    ]}
+                  />
+
+                </div>
+              </div>
+              <div style={{ fontSize: "0.8rem" }}>
+                Throughout college I have mostly focused on modern web technologies like React, NodeJs and Serverless computing etc. Most of my projects mainly being in the MERN Stack with occasional GoLang or Python focussed backend API's. However I love to deep dive into classic technologies, languages and most importantly the concepts. When I'm not developing I try to enhance my problem solving abilities by solving DSA problems. <br /> <br />
+                I try to frquently post at my <a href="https://blog.mansisaini.online/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, well more than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
+                If you want to collaborate or discuss anything, feel free to  <a href="#contact-me" style={{ color: "rgb(191, 165, 255)" }}>get in touch</a> with me.
+
+                <br/>
+                <br/>
+                Below you will find some of my personal projects I built.
               </div>
             </div>
-            <div className="image">
-              <img src={mypicture} className="img-si" />
-            </div>
+
           </div>
         </div>
       </section>
+
+
+
+
+
+
+      {/* <div className="image leftimganimate">
+              <img src={mypicture} className="img-si" />
+            </div> */}
 
       <section id="projects-sec">
         <div className="main">
@@ -162,8 +221,8 @@ const Home = () => {
                   with ExpressJS using Socket.io Frontend Built on ReactJS with
                   TypeScript.
                   <br />
-                  <br /> <a href="https://scalabletictactoe.vercel.app/" style={{color:"white"}}>Click Here</a> to preview. <br />
-                  <a href="https://github.com/mansi-done/tictactoe-api-with-sockets" style={{color:"white"}}>Click Here</a> for backend  GitHub <br /><a href="https://github.com/mansi-done/tictactoe-frontend" style={{color:"white"}}> Click Here </a> for front end 
+                  <br /> <a href="https://scalabletictactoe.vercel.app/" style={{ color: "white" }}>Click Here</a> to preview. <br />
+                  <a href="https://github.com/mansi-done/tictactoe-api-with-sockets" style={{ color: "white" }}>Click Here</a> for backend  GitHub <br /><a href="https://github.com/mansi-done/tictactoe-frontend" style={{ color: "white" }}> Click Here </a> for front end
                   GitHub
                 </div>
               </div>
@@ -179,7 +238,7 @@ const Home = () => {
                   Statistics, News, Market Patterns et cetera. Built by ReactJS,
                   using Redux Tool Kit for API integration. <br />
                   <br />
-                  <a href="https://cryptoden.netlify.app/" style={{color:"white"}}>Click Here </a>to preview.
+                  <a href="https://cryptoden.netlify.app/" style={{ color: "white" }}>Click Here </a>to preview.
                 </div>
               </div>
               <div className="scroll-image-cr"></div>
@@ -192,7 +251,7 @@ const Home = () => {
                   API to play Tic Tac Toe with n*n board. Build by Node JS using
                   Express JS server.
                   <br />
-                  <br /><a href="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api" style={{color:"white"}}> Click Here </a> to preview.
+                  <br /><a href="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
                 </div>
               </div>
             </div>
@@ -205,7 +264,7 @@ const Home = () => {
                   queries and complete in-depth product details to use in amazon
                   clones or just analysis. <br />
                   Build by Node JS using Express JS server (API on RapidAPI){" "}
-                  <br /> <br /> <a href="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" style={{color:"white"}}> Click Here </a> to preview.
+                  <br /> <br /> <a href="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" style={{ color: "white" }}> Click Here </a> to preview.
                 </div>
               </div>
             </div>
@@ -217,17 +276,17 @@ const Home = () => {
         <div className="contact-wrapper">
           <div className="contact-title">Contact</div>
           <div className="con-details">
-          <div className="named">
-            Name : Mansi Saini
-          </div>
-          <div className="mail"> Mail : mansi.saini01@gmail.com</div>
-          <div className="contactnum">
-           Phone :  +91 8106721687
-          </div>
+            <div className="named">
+              Name : Mansi Saini
+            </div>
+            <div className="mail"> Mail : mansi.saini01@gmail.com</div>
+            {/* <div className="contactnum">
+              Phone :  +91 8106721687
+            </div> */}
 
           </div>
-          
-          
+
+
 
         </div>
       </section>

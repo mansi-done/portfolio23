@@ -5,14 +5,18 @@ import Container from "./components/Container/Container";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About";
+
+import { ParallaxProvider } from 'react-scroll-parallax';
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Container />}>
-        <Route index element={<Home />} />
-        <Route  path="about" element={<About />} />
-      </Route>
-    </Routes>
+    <ParallaxProvider>
+      <Routes>
+        <Route path="/" element={<Container />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </ParallaxProvider>
   );
 }
 

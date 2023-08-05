@@ -22,7 +22,7 @@
 }
 
 .nav {
-  background-color: #b8aea37e;
+  /* background-color: #b8aea37e; */
   border-bottom-right-radius: 100%;
   padding-inline: 2.2vw;
   min-height: 50vh;
@@ -65,7 +65,7 @@
 .contact-link {
   text-decoration: none;
   color: white;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .contact-link:hover {
@@ -75,6 +75,7 @@
 
 .links-wrapper {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  padding-inline: 2.2vw;
 }

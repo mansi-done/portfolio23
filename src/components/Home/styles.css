@@ -102,13 +102,14 @@
 
 .intro-section {
   color: white;
-  padding-block: 2.5vh;
+  padding-block-start: 2.5vh;
   padding-inline: 2vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   /* align-items: center; */
 }
+
 .left {
   display: flex;
   flex-direction: row;
@@ -127,13 +128,12 @@
 .center {
   display: flex;
   gap: 1vw;
-  justify-content: space-between;
   width: 100%;
 }
 .aboutme {
   font-family: "Jost";
   max-width: 50vw;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .picture {
@@ -154,15 +154,21 @@
   display: flex;
 }
 
+
+
 .details {
   padding-block: 2vh;
   font-size: 0.7rem;
+  display: flex;
+  width: 70vw;
 }
-
+.exp{
+  width: 50%;
+}
 .experience-title {
   color: white;
   font-family: "Jost";
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
@@ -189,7 +195,8 @@
 .about-me-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90%;
+
 }
 
 .aboutme-title {
@@ -216,7 +223,7 @@
 .aboutme-details {
   color: white;
   font-family: "Jost";
-  width: 60%;
+  width: 100%;
 }
 
 .image {
@@ -341,5 +348,5 @@ img:hover {
 }
 
 .con-details{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
