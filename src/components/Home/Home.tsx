@@ -78,7 +78,7 @@ const Home = () => {
             <div className="side">
               <div className="name">Mansi Saini </div>
             </div>
-            <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Get in touch</Button> </a></div>
+            {/* <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Get in touch</Button> </a></div> */}
           </div>
 
           {/* <div className="right">
@@ -112,12 +112,13 @@ const Home = () => {
                 <div className="exp">
                   <div className="experience-title">Experience</div>
                   <Steps
+                    className="steps"
                     progressDot
                     current={5}
                     direction="vertical"
                     items={[
                       {
-                        title: <div>Adqura</div>,
+                        title: <div style={{ zIndex: 10 }}>Adqura</div>,
                         description: (
                           <div>
                             Software Engineer - <em>Hyderabad,India</em>
@@ -188,8 +189,8 @@ const Home = () => {
                 I try to frquently post at my <a href="https://blog.mansisaini.online/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, well more than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
                 If you want to collaborate or discuss anything, feel free to  <a href="#contact-me" style={{ color: "rgb(191, 165, 255)" }}>get in touch</a> with me.
 
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Below you will find some of my personal projects I built.
               </div>
             </div>
@@ -254,6 +255,7 @@ const Home = () => {
                   <br /><a href="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
                 </div>
               </div>
+
             </div>
             <div className="project">
               <div className="project-details">

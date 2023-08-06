@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import { Button } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
 
 import {
   LinkedinOutlined,
@@ -9,14 +11,19 @@ import {
   MediumWorkmarkOutlined,
 } from "@ant-design/icons";
 
-const Navbar = () => {
+const NavContent = () => {
   return (
-    <div className="navbar-wrapper">
+    <div className="navcontent">
       <div className="nav">
         <ul className="nav-list">
           <li>
             <a href="#home" className="link">
               Home
+            </a>
+          </li>
+          <li>
+            <a href="#about-me" className="link">
+              About
             </a>
           </li>
           <li>
@@ -42,11 +49,7 @@ const Navbar = () => {
               Resume
             </a>
           </li>
-          <li>
-            <a href="#about-me" className="link">
-              About
-            </a>
-          </li>
+
           <li>
             <a href="#contact-me" className="link">
               Contact
@@ -98,6 +101,37 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+    </div>
+  )
+}
+
+const Navbar = () => {
+  // const mediaQuery = window.matchMedia("(max-width: 700px)");
+  const [phoneRes, setPhoneRes] = useState(window.matchMedia("(max-width: 700px)").matches);
+  const [navOpen, setNavOpen] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    const handleMediaQueryChange = (mq: any) => {
+      setPhoneRes(mq.matches);
+    };
+    // Add the media query listener to directly check the matches property
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Clean up the media query listener when the component unmounts
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+  const handleNavOpen = () => {
+    navOpen ? setNavOpen(false) : setNavOpen(true)
+  }
+
+  return (
+    <div className="navbar-wrapper">
+      {!phoneRes && (<NavContent />
+      )}
     </div>
   );
 };

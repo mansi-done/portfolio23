@@ -25,11 +25,10 @@ const Container = () => {
           <Outlet/>
         </div>
         <Desktop/> */}
-
-        
         <Navbar />
         <Outlet />
-        <Sidebar/>
+        
+        {/* <Sidebar/> */}
       </ConfigProvider>
     </div>
   );

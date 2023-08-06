@@ -4,6 +4,7 @@
   color: white;
   animation-name: fade-in;
   animation-duration: 3s;
+  /* z-index: 10 !important; */
 }
 
 .main-links {
@@ -28,14 +29,14 @@
   border-radius: 50%;
 }
 
-.end{
+.end {
   border: 1px slid red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hire-me-btn{
+.hire-me-btn {
   font-family: "Jost";
 }
 
@@ -154,17 +155,31 @@
   display: flex;
 }
 
-
+.steps{
+  order: 1;
+}
 
 .details {
   padding-block: 2vh;
   font-size: 0.7rem;
   display: flex;
   width: 70vw;
+  z-index: 10 !important;
 }
-.exp{
+
+@media (max-width: 700px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+}
+
+/* .exp{
   width: 50%;
-}
+} */
 .experience-title {
   color: white;
   font-family: "Jost";
@@ -196,7 +211,6 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-
 }
 
 .aboutme-title {
@@ -332,21 +346,19 @@ img:hover {
   border-radius: 20px;
   padding: 1rem;
 }
-.contact-title{
+.contact-title {
   font-size: 2rem;
   padding-block: 0.5rem;
-
 }
-.contact-wrapper{
-  color:#fff;
+.contact-wrapper {
+  color: #fff;
   font-family: "Jost";
   display: flex;
   flex-direction: column;
 
-
   padding-block: 4rem;
 }
 
-.con-details{
+.con-details {
   font-size: 1rem;
 }

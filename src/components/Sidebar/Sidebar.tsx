@@ -5,7 +5,6 @@ const Sidebar = () => {
   return (
    <div className="sidebar-wrapper">
     <div className="design">Designed and Developed by Mansi Saini | All Rights Reserved </div>
-    
    </div>
   )
 }
