@@ -78,7 +78,7 @@ const Home = () => {
             <div className="side">
               <div className="name">Mansi Saini </div>
             </div>
-            {/* <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Get in touch</Button> </a></div> */}
+            <div className="end"> <a href="#contact-me" className="link"><Button type={"default"} size={"large"} className="hire-me-btn"> Get in touch</Button> </a></div>
           </div>
 
           {/* <div className="right">
