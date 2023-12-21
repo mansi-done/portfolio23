@@ -183,7 +183,7 @@
 .experience-title {
   color: white;
   font-family: "Jost";
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -302,6 +302,8 @@ img:hover {
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
+  text-decoration: none !important;
+
 }
 
 .scroll-image-ti {
@@ -341,10 +343,34 @@ img:hover {
   background-position: bottom;
 }
 
+
+.scroll-image-un {
+  width: 100%;
+  height: 40vh;
+
+  position: relative;
+  overflow: hidden;
+
+  background: url("../../assets/unsc.png");
+
+  background-size: cover;
+  background-position: top;
+  transition: all 10s ease;
+}
+
+.scroll-image-un:hover {
+  /* width: 100%; */
+  background-position: bottom;
+}
+
 .project {
   border: 1px solid rgba(255, 255, 255, 0.559);
   border-radius: 20px;
   padding: 1rem;
+}
+
+.project:hover{
+  box-shadow: rgba(255, 255, 255, 0.35) 5px 5px 15px;
 }
 .contact-title {
   font-size: 2rem;

@@ -3,6 +3,8 @@ import "./styles.css";
 import { Button, Steps, Divider } from "antd";
 
 import mypicture from "../../assets/mansi.jpg";
+import { Link } from 'react-router-dom';
+
 
 
 import { ParallaxBanner } from 'react-scroll-parallax';
@@ -184,11 +186,10 @@ const Home = () => {
 
                 </div>
               </div>
-              <div style={{ fontSize: "0.8rem" }}>
-                Throughout college I have mostly focused on modern web technologies like React, NodeJs and Serverless computing etc. Most of my projects mainly being in the MERN Stack with occasional GoLang or Python focussed backend API's. However I love to deep dive into classic technologies, languages and most importantly the concepts. When I'm not developing I try to enhance my problem solving abilities by solving DSA problems. <br /> <br />
-                I try to frquently post at my <a href="https://blog.mansisaini.online/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, well more than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
+              <div style={{ fontSize: "0.9rem" }}>
+                Throughout college I focused on modern web technologies like React, NodeJs and Serverless computing etc. Most of my projects are in MERN Stack with occasional GoLang or Python backend API's. However I love to deep dive into classic technologies, languages and most importantly the concepts. When I'm not developing I try to enhance my problem solving abilities by solving DSA problems. <br /> <br />
+                I try to frquently post at my <a href="https://blog.mansisaini.online/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, rather than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
                 If you want to collaborate or discuss anything, feel free to  <a href="#contact-me" style={{ color: "rgb(191, 165, 255)" }}>get in touch</a> with me.
-
                 <br />
                 <br />
                 Below you will find some of my personal projects I built.
@@ -212,23 +213,50 @@ const Home = () => {
         <div className="main">
           <div className="projects">
             <div className="experience-title">Projects </div>
-            <div className="project">
-              <div className="project-details">
-                <div className="heading">Real-time Tic Tac Toe</div>
-                <div className="description">
-                  Real time scalable Tic Tac Toe app to play with friends.{" "}
-                  <br />
-                  Includes real time gameplay and live chat. Backend API built
-                  with ExpressJS using Socket.io Frontend Built on ReactJS with
-                  TypeScript.
-                  <br />
-                  <br /> <a href="https://scalabletictactoe.vercel.app/" style={{ color: "white" }}>Click Here</a> to preview. <br />
-                  <a href="https://github.com/mansi-done/tictactoe-api-with-sockets" style={{ color: "white" }}>Click Here</a> for backend  GitHub <br /><a href="https://github.com/mansi-done/tictactoe-frontend" style={{ color: "white" }}> Click Here </a> for front end
-                  GitHub
+            <div className="experience-title" style={{ fontSize: "1.2rem" }}>Games </div>
+            <Link to="https://tictactoe.gameyy.online/">
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Real-time Tic Tac Toe</div>
+                  <div className="description">
+                    Real time scalable Tic Tac Toe app to play with friends.{" "}
+                    <br />
+                    Includes real time gameplay and live chat. Backend API built
+                    with ExpressJS using Socket.io Frontend Built on ReactJS with
+                    TypeScript.
+                    <br />
+                    <br /> <a href="https://tictactoe.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
+                    <a href="https://github.com/mansi-done/tictactoe-api-with-sockets" style={{ color: "white" }}>Click Here</a> for backend  GitHub <br /><a href="https://github.com/mansi-done/tictactoe-frontend" style={{ color: "white" }}> Click Here </a> for front end
+                    GitHub
+                  </div>
                 </div>
+                <div className="scroll-image-ti"></div>
               </div>
-              <div className="scroll-image-ti"></div>
-            </div>
+            </Link>
+
+
+            <Link to="https://unscramble.gameyy.online/">
+
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Unscramble</div>
+                  <div className="description">
+                    Just a fun word game to Unscramble jumbled words <br />
+                    <br />
+                    <a href="https://unscramble.gameyy.online/" style={{ color: "white" }}>Click Here </a>to preview.
+                  </div>
+                </div>
+                <div className="scroll-image-un"></div>
+              </div>
+
+            </Link>
+
+
+            <div className="experience-title" style={{ fontSize: "1.2rem" }}>Frontend </div>
+
+
+            <Link to="https://cryptoden.netlify.app/">
+
 
             <div className="project">
               <div className="project-details">
@@ -242,8 +270,16 @@ const Home = () => {
                   <a href="https://cryptoden.netlify.app/" style={{ color: "white" }}>Click Here </a>to preview.
                 </div>
               </div>
-              <div className="scroll-image-cr"></div>
+              <div className="scroll-image-cr" ></div>
             </div>
+
+            </Link>
+
+
+
+            <div className="experience-title" style={{ fontSize: "1.2rem" }}>API's/Backend </div>
+
+            <Link to="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api">
 
             <div className="project">
               <div className="project-details">
@@ -255,8 +291,13 @@ const Home = () => {
                   <br /><a href="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
                 </div>
               </div>
-
             </div>
+
+            </Link>
+
+            <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/">
+            
+
             <div className="project">
               <div className="project-details">
                 <div className="heading">Web Scrapper for Amazon India API</div>
@@ -270,6 +311,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </Link>
+
           </div>
         </div>
       </section>

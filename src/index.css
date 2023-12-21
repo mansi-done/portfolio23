@@ -78,3 +78,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #504e56;
 }
+
+a {
+  color: transparent;
+}
