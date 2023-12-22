@@ -320,9 +320,29 @@ img:hover {
   transition: all 10s ease;
 }
 
+
+.scroll-image-dr {
+  width: 100%;
+  height: 40vh;
+
+  position: relative;
+  overflow: hidden;
+
+  background: url("../../assets/drawboard.png");
+
+  background-size: cover;
+  background-position: top;
+  transition: all 10s ease;
+}
+
 .scroll-image-ti:hover {
   background-position: bottom;
 }
+.scroll-image-dr:hover{
+  background-position: bottom;
+}
+
+
 
 .scroll-image-cr {
   width: 100%;

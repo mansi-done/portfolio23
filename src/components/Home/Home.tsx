@@ -214,7 +214,23 @@ const Home = () => {
           <div className="projects">
             <div className="experience-title">Projects </div>
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>Games </div>
-            <Link to="https://tictactoe.gameyy.online/">
+
+            <Link to="https://drawboard.gameyy.online/"  target="_blank">
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Drawboard</div>
+                  <div className="description">
+                    Online Whiteboard to draw and sketch
+                    <br /> <a href="https://drawboard.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
+                    <a href="https://github.com/mansi-done/whiteboard-app" style={{ color: "white" }}>Click Here</a> for GitHub 
+                  </div>
+                </div>
+                <div className="scroll-image-dr"></div>
+              </div>
+            </Link>
+
+
+            <Link to="https://tictactoe.gameyy.online/"  target="_blank">
               <div className="project">
                 <div className="project-details">
                   <div className="heading">Real-time Tic Tac Toe</div>
@@ -235,7 +251,7 @@ const Home = () => {
             </Link>
 
 
-            <Link to="https://unscramble.gameyy.online/">
+            <Link to="https://unscramble.gameyy.online/"  target="_blank">
 
               <div className="project">
                 <div className="project-details">
@@ -255,7 +271,7 @@ const Home = () => {
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>Frontend </div>
 
 
-            <Link to="https://cryptoden.netlify.app/">
+            <Link to="https://cryptoden.netlify.app/"  target="_blank">
 
 
             <div className="project">
@@ -279,7 +295,7 @@ const Home = () => {
 
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>API's/Backend </div>
 
-            <Link to="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api">
+            <Link to="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api"  target="_blank">
 
             <div className="project">
               <div className="project-details">
@@ -295,7 +311,7 @@ const Home = () => {
 
             </Link>
 
-            <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/">
+            <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/"  target="_blank">
             
 
             <div className="project">
