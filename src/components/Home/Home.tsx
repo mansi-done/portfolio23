@@ -188,7 +188,7 @@ const Home = () => {
               </div>
               <div style={{ fontSize: "0.9rem" }}>
                 Throughout college I focused on modern web technologies like React, NodeJs and Serverless computing etc. Most of my projects are in MERN Stack with occasional GoLang or Python backend API's. However I love to deep dive into classic technologies, languages and most importantly the concepts. When I'm not developing I try to enhance my problem solving abilities by solving DSA problems. <br /> <br />
-                I try to frquently post at my <a href="https://blog.mansisaini.online/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, rather than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
+                I try to frquently post at my <a href="https://blogmansi.vercel.app/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, rather than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
                 If you want to collaborate or discuss anything, feel free to  <a href="#contact-me" style={{ color: "rgb(191, 165, 255)" }}>get in touch</a> with me.
                 <br />
                 <br />
