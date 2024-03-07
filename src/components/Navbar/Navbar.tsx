@@ -34,7 +34,7 @@ const NavContent = () => {
           <li>
             <a
               target="_blank"
-              href="https://blog.mansisaini.online/"
+              href="https://blogmansi.vercel.app/"
               className="link"
             >
               Blog

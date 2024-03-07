@@ -295,7 +295,7 @@ const Home = () => {
 
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>API's/Backend </div>
 
-            <Link to="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api"  target="_blank">
+            <Link to="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api"  target="_blank">
 
             <div className="project">
               <div className="project-details">
@@ -304,7 +304,7 @@ const Home = () => {
                   API to play Tic Tac Toe with n*n board. Build by Node JS using
                   Express JS server.
                   <br />
-                  <br /><a href="https://blog.mansisaini.online/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
+                  <br /><a href="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
                 </div>
               </div>
             </div>
