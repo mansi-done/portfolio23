@@ -215,14 +215,16 @@ const Home = () => {
             <div className="experience-title">Projects </div>
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>Games </div>
 
-            <Link to="https://drawboard.gameyy.online/"  target="_blank">
+            <Link to="https://drawnote.gameyy.online/" target="_blank">
               <div className="project">
                 <div className="project-details">
-                  <div className="heading">Drawboard</div>
+                  <div className="heading">Drawnote</div>
                   <div className="description">
-                    Online Whiteboard to draw and sketch
-                    <br /> <a href="https://drawboard.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
-                    <a href="https://github.com/mansi-done/whiteboard-app" style={{ color: "white" }}>Click Here</a> for GitHub 
+                    Notemaking/Virtual whiteboard/drawing app, it supports adding texts, images, PDF’s
+                    <br />
+                    Zoom, pan, pinch the board as well as make notes, drawings, hand- drawn sketches.
+                    <br /> <a href="https://drawnote.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
+                    <a href="https://github.com/mansi-done/drawnote" style={{ color: "white" }}>Click Here</a> for GitHub
                   </div>
                 </div>
                 <div className="scroll-image-dr"></div>
@@ -230,7 +232,27 @@ const Home = () => {
             </Link>
 
 
-            <Link to="https://tictactoe.gameyy.online/"  target="_blank">
+
+
+
+            <Link to="https://unscramble.gameyy.online/" target="_blank">
+
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Unscramble</div>
+                  <div className="description">
+                    Just a fun word game to Unscramble jumbled words <br />
+                    <br />
+                    <a href="https://unscramble.gameyy.online/" style={{ color: "white" }}>Click Here </a>to preview.
+                  </div>
+                </div>
+                <div className="scroll-image-un"></div>
+              </div>
+
+            </Link>
+
+
+            <Link to="https://tictactoe.gameyy.online/" target="_blank">
               <div className="project">
                 <div className="project-details">
                   <div className="heading">Real-time Tic Tac Toe</div>
@@ -251,43 +273,26 @@ const Home = () => {
             </Link>
 
 
-            <Link to="https://unscramble.gameyy.online/"  target="_blank">
-
-              <div className="project">
-                <div className="project-details">
-                  <div className="heading">Unscramble</div>
-                  <div className="description">
-                    Just a fun word game to Unscramble jumbled words <br />
-                    <br />
-                    <a href="https://unscramble.gameyy.online/" style={{ color: "white" }}>Click Here </a>to preview.
-                  </div>
-                </div>
-                <div className="scroll-image-un"></div>
-              </div>
-
-            </Link>
-
-
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>Frontend </div>
 
 
-            <Link to="https://cryptoden.netlify.app/"  target="_blank">
+            <Link to="https://cryptoden.netlify.app/" target="_blank">
 
 
-            <div className="project">
-              <div className="project-details">
-                <div className="heading">CryptoDen</div>
-                <div className="description">
-                  A Cryptocurrency React Web Application with LIVE Crypto Data,
-                  it provides Latest In-depth data about all Cryptocurrencies,
-                  Statistics, News, Market Patterns et cetera. Built by ReactJS,
-                  using Redux Tool Kit for API integration. <br />
-                  <br />
-                  <a href="https://cryptoden.netlify.app/" style={{ color: "white" }}>Click Here </a>to preview.
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">CryptoDen</div>
+                  <div className="description">
+                    A Cryptocurrency React Web Application with LIVE Crypto Data,
+                    it provides Latest In-depth data about all Cryptocurrencies,
+                    Statistics, News, Market Patterns et cetera. Built by ReactJS,
+                    using Redux Tool Kit for API integration. <br />
+                    <br />
+                    <a href="https://cryptoden.netlify.app/" style={{ color: "white" }}>Click Here </a>to preview.
+                  </div>
                 </div>
+                <div className="scroll-image-cr" ></div>
               </div>
-              <div className="scroll-image-cr" ></div>
-            </div>
 
             </Link>
 
@@ -295,38 +300,38 @@ const Home = () => {
 
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>API's/Backend </div>
 
-            <Link to="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api"  target="_blank">
+            <Link to="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" target="_blank">
 
-            <div className="project">
-              <div className="project-details">
-                <div className="heading">Scalable TicTacToe API</div>
-                <div className="description">
-                  API to play Tic Tac Toe with n*n board. Build by Node JS using
-                  Express JS server.
-                  <br />
-                  <br /><a href="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Scalable TicTacToe API</div>
+                  <div className="description">
+                    API to play Tic Tac Toe with n*n board. Build by Node JS using
+                    Express JS server.
+                    <br />
+                    <br /><a href="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
+                  </div>
                 </div>
               </div>
-            </div>
 
             </Link>
 
-            <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/"  target="_blank">
-            
+            <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" target="_blank">
 
-            <div className="project">
-              <div className="project-details">
-                <div className="heading">Web Scrapper for Amazon India API</div>
-                <div className="description">
-                  {" "}
-                  API that returns LIVE product listings for amazon search
-                  queries and complete in-depth product details to use in amazon
-                  clones or just analysis. <br />
-                  Build by Node JS using Express JS server (API on RapidAPI){" "}
-                  <br /> <br /> <a href="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" style={{ color: "white" }}> Click Here </a> to preview.
+
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Web Scrapper for Amazon India API</div>
+                  <div className="description">
+                    {" "}
+                    API that returns LIVE product listings for amazon search
+                    queries and complete in-depth product details to use in amazon
+                    clones or just analysis. <br />
+                    Build by Node JS using Express JS server (API on RapidAPI){" "}
+                    <br /> <br /> <a href="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" style={{ color: "white" }}> Click Here </a> to preview.
+                  </div>
                 </div>
               </div>
-            </div>
             </Link>
 
           </div>
