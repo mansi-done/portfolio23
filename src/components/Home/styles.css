@@ -366,12 +366,12 @@ img:hover {
 
 .scroll-image-un {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
 
   position: relative;
   overflow: hidden;
 
-  background: url("../../assets/unsc.png");
+  background: url("../../assets/unsc.gif");
 
   background-size: cover;
   background-position: top;
