@@ -213,7 +213,7 @@ const Home = () => {
         <div className="main">
           <div className="projects">
             <div className="experience-title">Projects </div>
-            <div className="experience-title" style={{ fontSize: "1.2rem" }}>Games </div>
+            <div className="experience-title" style={{ fontSize: "1.2rem" }}>Games/Interactive </div>
 
             <Link to="https://drawnote.gameyy.online/" target="_blank">
               <div className="project">
@@ -225,6 +225,9 @@ const Home = () => {
                     Zoom, pan, pinch the board as well as make notes, drawings, hand- drawn sketches.
                     <br /> <a href="https://drawnote.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
                     <a href="https://github.com/mansi-done/drawnote" style={{ color: "white" }}>Click Here</a> for GitHub
+                    <br/>
+                    <a href="https://www.youtube.com/watch?v=Dirp0JvdNqo" style={{ color: "white" }}>Click Here</a> a Demo
+                    
                   </div>
                 </div>
                 <div className="scroll-image-dr"></div>
