@@ -239,12 +239,12 @@ const Home = () => {
 
 
             <Link to="https://unscramble.gameyy.online/" target="_blank">
-
               <div className="project">
                 <div className="project-details">
                   <div className="heading">Unscramble</div>
                   <div className="description">
-                    Just a fun word game to Unscramble jumbled words <br />
+                    Fun word game to Unscramble jumbled words <br />
+                    Made by using React and Typescript
                     <br />
                     <a href="https://unscramble.gameyy.online/" style={{ color: "white" }}>Click Here </a>to preview.
                   </div>
@@ -280,8 +280,6 @@ const Home = () => {
 
 
             <Link to="https://cryptoden.netlify.app/" target="_blank">
-
-
               <div className="project">
                 <div className="project-details">
                   <div className="heading">CryptoDen</div>
