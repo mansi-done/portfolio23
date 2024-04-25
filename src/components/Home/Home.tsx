@@ -189,7 +189,7 @@ const Home = () => {
               <div style={{ fontSize: "0.9rem" }}>
                 Throughout college I focused on modern web technologies like React, NodeJs and Serverless computing etc.Most of my projects are in MERN Stack with occasional GoLang or Python backend API's. However I love to deep dive into classic technologies, languages and most importantly the concepts. I like to develop mini games for fun,When I'm not developing I try to enhance my problem solving abilities by solving DSA problems. <br /> <br />
                 I try to frquently post at my <a href="https://blogmansi.vercel.app/" style={{ color: "rgb(191, 165, 255)" }}>Blog</a>, rather than a place to give advice, Its more of me documenting my learning process in software industry {":')"} <br />
-                This entire portfolio was built by me from scratch using React and Typescript. <br/>
+                This entire portfolio was built by me from scratch using React and Typescript. <br />
                 If you want to collaborate or discuss anything, feel free to  <a href="#contact-me" style={{ color: "rgb(191, 165, 255)" }}>get in touch</a> with me.
                 <br />
                 <br />
@@ -226,9 +226,9 @@ const Home = () => {
                     Zoom, pan, pinch the board as well as make notes, drawings, hand- drawn sketches.
                     <br /> <a href="https://drawnote.gameyy.online/" style={{ color: "white" }}>Click Here</a> to preview. <br />
                     <a href="https://github.com/mansi-done/drawnote" style={{ color: "white" }}>Click Here</a> for GitHub
-                    <br/>
+                    <br />
                     <a href="https://www.youtube.com/watch?v=Dirp0JvdNqo" style={{ color: "white" }}>Click Here</a> a Demo
-                    
+
                   </div>
                 </div>
                 <div className="scroll-image-dr"></div>
@@ -241,6 +241,9 @@ const Home = () => {
 
             <Link to="https://unscramble.gameyy.online/" target="_blank">
               <div className="project">
+                <div className="scroll-image-un"></div>
+
+
                 <div className="project-details">
                   <div className="heading">Unscramble</div>
                   <div className="description">
@@ -250,7 +253,6 @@ const Home = () => {
                     <a href="https://unscramble.gameyy.online/" style={{ color: "white" }}>Click Here </a>to preview.
                   </div>
                 </div>
-                <div className="scroll-image-un"></div>
               </div>
 
             </Link>
@@ -282,6 +284,8 @@ const Home = () => {
 
             <Link to="https://cryptoden.netlify.app/" target="_blank">
               <div className="project">
+                <div className="scroll-image-cr" ></div>
+
                 <div className="project-details">
                   <div className="heading">CryptoDen</div>
                   <div className="description">
@@ -293,7 +297,6 @@ const Home = () => {
                     <a href="https://cryptoden.netlify.app/" style={{ color: "white" }}>Click Here </a>to preview.
                   </div>
                 </div>
-                <div className="scroll-image-cr" ></div>
               </div>
 
             </Link>
@@ -301,22 +304,6 @@ const Home = () => {
 
 
             <div className="experience-title" style={{ fontSize: "1.2rem" }}>API's/Backend </div>
-
-            <Link to="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" target="_blank">
-
-              <div className="project">
-                <div className="project-details">
-                  <div className="heading">Scalable TicTacToe API</div>
-                  <div className="description">
-                    API to play Tic Tac Toe with n*n board. Build by Node JS using
-                    Express JS server.
-                    <br />
-                    <br /><a href="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
-                  </div>
-                </div>
-              </div>
-
-            </Link>
 
             <Link to="https://rapidapi.com/mansisaini01/api/amazon-india-data-scrapper/" target="_blank">
 
@@ -335,6 +322,24 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+
+            <Link to="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" target="_blank">
+
+              <div className="project">
+                <div className="project-details">
+                  <div className="heading">Scalable TicTacToe API</div>
+                  <div className="description">
+                    API to play Tic Tac Toe with n*n board. Build by Node JS using
+                    Express JS server.
+                    <br />
+                    <br /><a href="https://blogmansi.vercel.app/post/scalable-tic-tac-toe-api" style={{ color: "white" }}> Click Here </a> to preview.
+                  </div>
+                </div>
+              </div>
+
+            </Link>
+
+
 
           </div>
         </div>

@@ -267,6 +267,7 @@
 
 .project {
   display: flex;
+  gap: 10px;
 }
 
 .project-details {
