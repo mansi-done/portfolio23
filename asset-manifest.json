@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mansi-done/portfolio23/static/css/main.62a91e99.css",
+    "main.js": "/mansi-done/portfolio23/static/js/main.3e47e657.js",
+    "static/media/drawnote.gif": "/mansi-done/portfolio23/static/media/drawnote.38c19c4abeaadc7f6401.gif",
+    "static/media/CryptoDen.png": "/mansi-done/portfolio23/static/media/CryptoDen.800236de196ecef39e5f.png",
+    "static/media/unsc.gif": "/mansi-done/portfolio23/static/media/unsc.0d9d90b00b0a8d6db4dd.gif",
+    "static/media/TicTacToe.png": "/mansi-done/portfolio23/static/media/TicTacToe.de8b5a1bf39b4265dc3f.png",
+    "static/media/bg.png": "/mansi-done/portfolio23/static/media/bg.04fcbbea1b302dbd18ee.png",
+    "index.html": "/mansi-done/portfolio23/index.html",
+    "main.62a91e99.css.map": "/mansi-done/portfolio23/static/css/main.62a91e99.css.map",
+    "main.3e47e657.js.map": "/mansi-done/portfolio23/static/js/main.3e47e657.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62a91e99.css",
+    "static/js/main.3e47e657.js"
+  ]
+}
