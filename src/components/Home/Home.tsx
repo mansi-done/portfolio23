@@ -120,6 +120,14 @@ const Home = () => {
                     direction="vertical"
                     items={[
                       {
+                        title: <div style={{ zIndex: 10 }}>Skit.ai</div>,
+                        description: (
+                          <div>
+                            Software Engineer - <em>Bengaluru,India</em>
+                          </div>
+                        ),
+                      },
+                      {
                         title: <div style={{ zIndex: 10 }}>Adqura</div>,
                         description: (
                           <div>
@@ -135,22 +143,7 @@ const Home = () => {
                           </div>
                         ),
                       },
-                      {
-                        title: <div>Logarithm Technologies</div>,
-                        description: (
-                          <div>
-                            Web Development Intern - <em>Banglore,India (Remote)</em>
-                          </div>
-                        ),
-                      },
-                      {
-                        title: <div>Helping Hand International</div>,
-                        description: (
-                          <div>
-                            Web Development Intern - <em> Remote</em>
-                          </div>
-                        ),
-                      },
+
                     ]}
                   />
 
