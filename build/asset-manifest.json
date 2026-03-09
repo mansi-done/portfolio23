@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d1cc198.css",
+    "main.js": "/static/js/main.052a6e68.js",
+    "static/media/drawnote.gif": "/static/media/drawnote.38c19c4abeaadc7f6401.gif",
+    "static/media/CryptoDen.png": "/static/media/CryptoDen.800236de196ecef39e5f.png",
+    "static/media/unsc.gif": "/static/media/unsc.0d9d90b00b0a8d6db4dd.gif",
+    "static/media/TicTacToe.png": "/static/media/TicTacToe.de8b5a1bf39b4265dc3f.png",
+    "static/media/bg.png": "/static/media/bg.04fcbbea1b302dbd18ee.png",
+    "index.html": "/index.html",
+    "main.3d1cc198.css.map": "/static/css/main.3d1cc198.css.map",
+    "main.052a6e68.js.map": "/static/js/main.052a6e68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d1cc198.css",
+    "static/js/main.052a6e68.js"
+  ]
+}
